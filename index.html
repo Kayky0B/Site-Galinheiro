@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Site Galinheiro</title>
+</head>
+<body>
+    <header>
+    <h1>Galinheiro Baracho</h1>
+    <p>O verdadeiro sabor do campo — ovos caipiras produzidos com carinho</p>
+  </header>
+
+  <nav>
+    <a href="#galinhas">Nossas Galinhas</a>
+    <a href="#alimentacao">Alimentação</a>
+    <a href="#diferenca">A Diferença</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="galinhas" class="galinhas">
+    <h2>Nossas Galinhas</h2>
+    <p>As galinhas do Galinheiro Baracho são criadas soltas, com acesso ao sol, grama e alimentação natural. Aqui, cada galinha é tratada com respeito e cuidado.</p>
+    <img src="images/galinhasnocampo.jpg" alt="Galinhas caipiras">
+  </section>
+
+  <section id="alimentacao" class="alimentacao">
+    <h2>Alimentação Natural</h2>
+    <p>Uma boa alimentação é o segredo para ovos saudáveis e saborosos:</p>
+    <ul>
+      <li>🌽 Milho moído e farelo de soja
+        <img src="images/milhomoido.jpeg">
+      </li>
+      <li>🥬 Verduras e restos de horta
+        <img src="images/verduras.jpg">
+      </li>
+      <li>🌻 Grãos e sementes selecionados</li>
+      <li>💧 Água limpa e fresca todos os dias
+        <img src="images/agualimpa.jpg">
+      </li>
+    </ul>
+  </section>
+
+  <section id="diferenca" class="diferenca">
+    <h2>A Diferença Está na Gema</h2>
+    <p>Nossos ovos têm uma gema alaranjada e consistente, sinal de uma alimentação rica e natural. É o sabor do campo em cada ovo!</p>
+    <img src="images/ovogemalaraja_02.jpg" alt="Ovos caipiras com gema alaranjada">
+  </section>
+
+  <section id="galeria" class="galeria">
+    <h2>Galeria</h2>
+    <img src="galinheiro.jpg" alt="Galinheiro Baracho">
+    <img src="galinha2.jpg" alt="Galinhas soltas">
+    <img src="ovo.jpg" alt="Ovos frescos">
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>📞 WhatsApp: <strong>(73) 98161-6386</strong></p>
+    <p>📧 Email: <strong>kaykybaracho8@gmail.com</strong></p>
+    <p>📍 Localização: Fazenda Baracho, Taboquinhas Bahia</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Galinheiro Baracho — Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    // Pequeno script para rolagem suave
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+</body>
+</body>
+</html>

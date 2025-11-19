@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+      box-sizing: border-box;
+    }
+
+body {
+      margin: 0;
+      font-family: "Momo Trust Display", sans-serif;
+      background-color: #fffaf3;
+      color: #3e2f1c;
+    }
+
+    header {
+      background: linear-gradient(to right, #004910, #ceca02);
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      background-color: #3e2f1c;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+
+    nav a {
+      color: #fff3e0;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcf66;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #a36c34;
+      border-bottom: 3px solid #ffcf66;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .galinhas, .alimentacao, .diferenca, .galeria {
+      text-align: center;
+    }
+
+    .galinhas img, .diferenca img, .galeria img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      margin: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .alimentacao ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .alimentacao li {
+      background-color: #ffecd1;
+      border-left: 6px solid #c58b48;
+      margin: 0.5rem 0;
+      padding: 0.7rem;
+      text-align: left;
+    }
+
+    .alimentacao ul li img {
+    width: 200px;       /* tamanho igual para todas */
+    height: 200px;      /* altura fixa */
+    object-fit: cover;  /* evita distorção */
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+    footer {
+      background-color: #3e2f1c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    /* ---------- RESPONSIVO ---------- */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      nav a {
+        display: inline-block;
+        margin: 0.5rem;
+      }
+    }
